@@ -16,8 +16,8 @@ const HomeServices = () => {
     return (
         <section className="be-home-services">
             <Container className="be-section-header text-center">
-                <h1 >Dream Your Next Trip</h1>
-                <h4 >Weekend getaways from Dhaka City</h4>
+                <h1 >Lets Plan a Trip</h1>
+                <h4 >We start plan from Dhaka city</h4>
             </Container>
 
             <Container>

@@ -15,7 +15,7 @@ const HomeFAQ = () => {
 
     return (
         <section className="be-home-faqs">
-            <Container className="be-section-header">
+            <Container className="be-section-header text-center">
                 <h1 >Frequently Asked Questions</h1>
             </Container>
 

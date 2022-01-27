@@ -1,12 +1,11 @@
-import { Link } from 'react-router-dom'
-import { Container, Row, Col, Stack } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 
 
 const Footer = () => {
     return (
         <>
             <footer>
-                <Container className="pt-5 mb-5">
+                <Container className="pt-5 mb-5 text-center">
                     <h1>BD Tourist</h1>
                     <p>Visit Bangladesh with Us</p>
                 </Container>
