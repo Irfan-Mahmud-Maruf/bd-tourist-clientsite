@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap')
+// Bootstrap Sass
+@import "~bootstrap/scss/bootstrap"
+
+
+// Colors
+$color-bg: #F6F6F6
+
+
+body 
+    font-family: 'Maven Pro', sans-serif
+    font-weight: 400
+
+
+// Title
+h1,h2, h3, h4, h5, h6 
+    font-family: 'Maven Pro', sans-serif
+    font-weight: 700
+    letter-spacing: -0.02em
+
+.be-title-big 
+    font-weight: bold
+    color: #1A1A1A
+    line-height: 1.1em
+
+
+p 
+    font-family: 'Maven Pro', sans-serif
+    font-size: 16px
+    
+.p-small 
+    font-family: 'Maven Pro', sans-serif
+    font-size: 14px
+
+
+a 
+    color: #1A1A1A
+    text-decoration: none
+
+// Buttons 
+.btn
+    border-radius: 0 !important
+    &:hover 
+        opacity: 0.9
+
+.btn-dark 
+    color: #FFFFFF !important
+    background: #000000 !important
+
+
+.be-link
+    margin-bottom: 0 !important
+    &.dark 
+        a
+            color: #000
+    &.light 
+        a
+            color: #fff
+    &.underline 
+        a 
+            text-decoration: underline 
+    a
+        font-weight: 600
+        text-decoration: none
+        &:hover
+            text-decoration: underline
+
+.card 
+    border: 0 !important
+    border-radius: 0 !important
+    &:hover
+        box-shadow: 0 12px 60px rgb(10 10 10 / 30%) !important
+    .card-img
+        border-radius: 0 !important
+    .card-body
+        padding: 28px 10%
+        .card-title
+            font-size: 20px
+            font-weight: 600
+            line-height: 23px 
+        .card-text
+            color: #999
+            font-size: 14px
+            line-height: 1.16em
+    .card-footer
+        border-radius: 0 !important
+
+
+// Form 
+form
+    p 
+        margin-bottom: 0.5rm
+        
+input[type="email"], input[type="password"], input[type="text"], input[type="number"], input[type="url"], input[type="datetime"], textarea
+    padding: 10px 14px
+    font-weight: 400
+    border: 1px solid #EEEEEE !important
+    &:active, &:focus
+        border: 1px solid #000 !important
+        outline: none !important
+        
+input[type="submit"], button[type="submit"] 
+    padding: 10px 14px
+    border: 1px solid #000000 !important
+
+
+// Navigation 
+.user-profile.navbar-nav
+    .nav-link
+        display: flex
+        align-items: center
+        svg 
+            margin-right: 8px
+
+
+
+// accordion
+.accordion 
+    .accordion-item 
+        border-top: none !important
+        border-right: none !important
+        border-left: none !important
+        border-bottom: 1px solid #000 !important
+        &:first-of-type
+            border-top: 1px solid #000 !important
+        .accordion-header
+            .accordion-button
+                padding: 10px 10px 10px 0
+            [aria-expanded="true"] 
+                color: #fff
+                background: #000 
+                outline: none
+                .accordion-button
+                    padding: 10px
+    .accordion-collapse 
+        .accordion-body 
+
+
+.be-order-table 
+    thead 
+        tr 
+            th
+    tboady
+        tr 
+            td 
+    .btn 
+        
+
+// .offcanvas
+//     &.offcanvas-top
+//     &.offcanvas-bottom 
+
+
+
+section 
+    padding-top: 100px
+    padding-bottom: 100px
+    .be-section-header 
+        margin-bottom: 45px
+        h1 
+            // margin-bottom: 
+            font-size: 48px
+            line-height: 58px 
+            font-weight: 600
+        h4 
+            font-weight: 400
+
+
+
+
+/********************/
+/* Pages            */
+/********************/
+.be-home-hero  
+    width: 100%
+    .bg 
+        width: 100%
+        height: 100%
+        position: absolute 
+        display: block
+        top: 0 
+        left: 0
+        right: 0
+        bottom: 0 
+        z-index: -1  
+        background-size: cover 
+        background-position: center
+        background-repeat: no-repeat
+        object-fit: fill
+        background-attachment: fixed
+    .container
+        .be-hero-box 
+            // background: 
+@media screen and ( min-width: 1366px )
+    .be-home-hero  
+        width: 100%
+        min-height: 80vh
+        border-radius: 25px
+        .container 
+            .be-hero-box 
+                padding: 48px
+                // background:
+                h1 
+                p 
+                .btn
+                    a 
+                        color: #fff  
+                .be-link
+
+
+// HomeServices
+.be-home-services 
+    background: $color-bg 
+
+// HomeBlogs 
+.be-home-blogs 
+    background: #000000
+    .be-section-header 
+        h1
+            color: #FFFFFF
+    a 
+        color: #000000
+        text-decoration: none 
+        &:hover 
+            color: #000000
+            .card-title
+                opacity: .9
+                text-decoration: underline
+    .card 
+        text-decoration: none
+        &:hover
+            box-shadow: 0 12px 60px rgb(10 10 10 / 30%) !important
+        .card-img
+        .card-body
+            background: $color-bg 
+            &:hover
+                background: #FFFFFF
+            .card-title
+            .card-text
+                color: #999
+        .card-footer
+
+
+
+// Footer 
+footer 
+    background: #000000
+    .copyright 
+        color: #FFFFFF
+        border-top: 1px solid #333 
+        .link, a
+            color: #FFFFFF !important 
+            text-decoration: none
+
+
+
+
+// Error404
+.be-error-404
+    h1 
+        font-size: 48px 
+        font-weight: 700
+    h4
+        font-size: 58px 
+        font-weight: 700
+
+
+// Login 
+.be-login 
+    background: $color-bg 
+    .be-section-header 
+    .be-login-form
+        padding: 40px
+        background: #FFFFFF
+        form 
+            button[type="submit"]
+                width: 100%
+                color: #fff
+                background: #000
+                font-weight: 500
+        .message-box 
+            color: #1A1A1A !important
+            background: $color-bg
+            p 
+                margin-bottom: 0 !important
+        .d_0_auth  
+            button 
+                width: 100%
+                // color: #fff
+                background: $color-bg
+                font-weight: 500
+                border: 1px solid $color-bg 
+                &:hover
+                    border: 1px solid #000
+
+// Service 
+.be-add-ne-service 
+    height: 70vh !important
+    .textarea-vstack 
+        height: 100%
+        textarea 
+            height: 100%
+
+
+// Single Service Page 
+.be-single-service 
+    min-height: 100vh 
+    .be-single-service-header 
+        padding-top: 100px 
+        padding-bottom: 60px  
+        h1 
+            font-size: 48px
+            line-height: 120% 
+            font-weight: 700
+    .be-single-service-cover 
+    .be-single-service-body
+        padding-top: 80px 
+        padding-bottom: 100px
+
+
+// Order 
+.be-order-table 
+    .be-new-service 
+        width: 100% 
+        background: #000000 !important
