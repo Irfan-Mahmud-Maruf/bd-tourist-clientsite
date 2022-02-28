@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <>
             <Layout>
-                <Hero className="" bg={`https://localhost:3000/img/hero.jpg`} />
+                <Hero/>
                 <HomeServices />
                 <HomeBlog />
                 <HomeFAQ />
