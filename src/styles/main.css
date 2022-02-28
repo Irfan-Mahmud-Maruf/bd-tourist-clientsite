@@ -270,9 +270,9 @@ section .be-section-header h4 {
   color: #000000;
 }
 
-.be-home-blogs a:hover .card-title {
+.be-home-blogs a .card-title {
   opacity: 0.9;
-  text-decoration: underline;
+  text-align: center;
 }
 
 .be-home-blogs .card {

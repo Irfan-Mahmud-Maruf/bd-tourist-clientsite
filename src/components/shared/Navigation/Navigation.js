@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { HiUser } from "react-icons/hi";
+import { NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
 
@@ -11,24 +12,24 @@ const Navigation = () => {
         <header>
             <Navbar className="navbar-primary" expand="sm" bg="light" sticky="top">
                 <Container >
-                    <Navbar.Brand href={`/`}>BD Tourist</Navbar.Brand>
+                    <NavLink className="navbar-brand" to={`/`}>BD Tourist</NavLink>
 
                     <Navbar.Toggle aria-controls="navbarPrimary" />
                     
                     <Navbar.Collapse id="navbarPrimary" >       
                         <Nav className="mx-auto">
                             {user.email && <>    
-                                <Nav.Link href={`/`}>Home</Nav.Link>
-                                <Nav.Link href={`/dashboard/my-orders`}>My Order</Nav.Link>
-                                <Nav.Link href={`/dashboard/orders`}>Orders</Nav.Link>
-                                <Nav.Link href={`/dashboard/services`}>Add service</Nav.Link>
+                                <NavLink className="nav-link" to={`/`}>Home</NavLink>
+                                <NavLink className="nav-link" to={`/dashboard/my-orders`}>My Order</NavLink>
+                                <NavLink className="nav-link" to={`/dashboard/orders`}>Orders</NavLink>
+                                <NavLink className="nav-link" to={`/dashboard/services`}>Add service</NavLink>
                             </>}  
                         </Nav>          
                         
                         <Nav className="user-profile">
                             { !user.email && <>
-                                <Nav.Link href={`/login`}><HiUser/> Login</Nav.Link>
-                                <Nav.Link href={`/register`}>Register</Nav.Link>
+                                <NavLink className="nav-link" to={`/login`}> <HiUser/> Login</NavLink>
+                                <NavLink className="nav-link" to={`/register`}>Register</NavLink>
                             </>}
 
                             {user.email && <>

@@ -1,27 +1,23 @@
 import { ErrorMessage, Field, Form, Formik } from 'formik'
 import { Button, Container, Stack } from 'react-bootstrap'
-import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom'
+import { Link, Navigate, useLocation } from 'react-router-dom'
 import useAuth from '../../hooks/useAuth'
 
 
-const SignUpForm = () => {
-    const navigate = useNavigate()
+const SignInForm = () => {
     const location = useLocation()
     let from = location.state?.from?.pathname || "/";
-    console.log("From: ", from)
 
     const { 
-        auth,
         user,
+        auth,
         message,
-        signupWithFormHandler,
+        signinWithFormHandler,
         signinWith0Handler
     } = useAuth()
-    
 
     return (
         <>
-            { user.email && navigate(from) }
             
             { !user.email && <>
                 <Container className="be-login-form">
@@ -47,7 +43,7 @@ const SignUpForm = () => {
                         return errors;
                     }}
                     onSubmit={values => {
-                        signupWithFormHandler(values)
+                        signinWithFormHandler(values)
 
                         if(auth.user) {
                             <Navigate to={from} />
@@ -57,7 +53,7 @@ const SignUpForm = () => {
                         {({values}) => (
 
                             <Form>
-                                <h3 className="mb-4">Register now</h3>
+                                <h3 className="mb-4">Log in</h3>
 
                                 {message && <>
                                     <div className="message-box text-light bg-custom p-3 mt-3 mb-4">
@@ -75,7 +71,7 @@ const SignUpForm = () => {
                                     <ErrorMessage name="password" className="text-red" component="p" />
                                 </Stack>
 
-                                <Button type="submit" className='w-100' variant="secondary" >Register</Button>
+                                <Button type="submit" className='w-100' variant="secondary" >Log in</Button>
                             </Form>
                         )}
                     </Formik>
@@ -85,7 +81,7 @@ const SignUpForm = () => {
                     </div>
 
                     <div className="link">
-                        <p className="text-center">Already have an account? <Link to="/login">Log in</Link></p>
+                        <p className="text-center">Do not have an account? <Link to="/register">Registration Now</Link></p>
                     </div>
                 </Container>
             </>}
@@ -93,4 +89,4 @@ const SignUpForm = () => {
     )
 }
 
-export default SignUpForm;
+export default SignInForm;

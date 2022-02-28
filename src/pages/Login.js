@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { useLocation, useNavigate } from 'react-router'
-import SigninForm from '../components/login/SigninForm'
+import SignInForm from '../components/registration/SignInForm'
 import Layout from '../components/shared/Layout'
 import useAuth from '../hooks/useAuth'
 
@@ -9,7 +9,7 @@ import useAuth from '../hooks/useAuth'
 const Login = () => {
     const navigate = useNavigate()
     const location = useLocation()
-    const from = location.state.from.pathname || "/";
+    const from = location?.state?.from?.pathname || "/";
 
     const { auth } = useAuth()
 
@@ -27,7 +27,7 @@ auth && navigate(from)
                         </Col>
 
                         <Col lg={5} md={5} sm={12}>
-                            <SigninForm />
+                            <SignInForm />
                         </Col>
                     </Row>
                 </Container>
