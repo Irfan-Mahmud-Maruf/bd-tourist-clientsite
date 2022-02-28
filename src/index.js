@@ -1,11 +1,11 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './styles/main.sass';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter } from 'react-router-dom';
+import App from './App';
 import AuthProvider from './contexts/AuthProvider';
+import reportWebVitals from './reportWebVitals';
+import './styles/main.css';
 
 
 ReactDOM.render(

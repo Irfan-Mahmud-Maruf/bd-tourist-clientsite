@@ -9,7 +9,7 @@ const Navigation = () => {
 
     return (
         <header>
-            <Navbar className="navbar-primary" expand="sm" bg="dark" variant="dark" sticky="top">
+            <Navbar className="navbar-primary" expand="sm" bg="light" sticky="top">
                 <Container >
                     <Navbar.Brand href={`/`}>BD Tourist</Navbar.Brand>
 
@@ -26,13 +26,11 @@ const Navigation = () => {
                         </Nav>          
                         
                         <Nav className="user-profile">
-                            {/* Anonymas State */}
                             { !user.email && <>
                                 <Nav.Link href={`/login`}><HiUser/> Login</Nav.Link>
                                 <Nav.Link href={`/register`}>Register</Nav.Link>
                             </>}
 
-                            {/* Loggedin state */}
                             {user.email && <>
                                 <Navbar.Text>
                                     {user?.displayName?user?.displayName:'Nameless'} | 

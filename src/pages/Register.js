@@ -8,10 +8,10 @@ const Register = () => {
         <Layout>
             <section className="be-login">
                 <Container>
-                    <Row>
+                    <Row className='d-flex align-items-center justify-content-around'>
                         <Col lg={6} md={6} sm={12}>
                             <Container className="be-section-header">
-                                <h1>Explore the <br/>globe with us</h1>
+                                <img src={`https://img.freepik.com/free-vector/forms-concept-illustration_114360-4797.jpg?w=996`} alt="" className='w-75'/>
                             </Container>
                         </Col>
 

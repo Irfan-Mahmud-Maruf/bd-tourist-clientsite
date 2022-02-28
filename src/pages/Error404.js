@@ -8,13 +8,11 @@ const Error404 = () => {
         <>
             <Layout>
                 <section className="be-error-404">
-                    <Container>
-                        <h1 className="mb-2">Opps!</h1>
-                        <h4 className="mb-2">404 Status</h4>
-                        <p className="mb-5">Please make sure you're in the right address.</p>
+                    <Container className="d-flex flex-column justify-content-center align-items-center">
+                        <img src={'https://img.freepik.com/free-vector/traffic-sign-page-404-found-flat-illustration_80328-232.jpg?w=1380'} alt="" className="w-50"/>
 
                         <p>
-                            <Link className="btn btn-dark" to={`/`}>
+                            <Link className="btn btn-outline-secondary" to={`/`}>
                                 Get back to homepage
                             </Link>
                         </p>

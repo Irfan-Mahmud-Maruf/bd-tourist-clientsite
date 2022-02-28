@@ -22,12 +22,9 @@ function App() {
         <Route exact path={`/dashboard`} element={<RequireAuth><UserDashboard/></RequireAuth>} />
         <Route exact path={`/dashboard/my-orders`} element={<RequireAuth><UserOrder/></RequireAuth>} />
         <Route exact path={`/dashboard/orders`} element={<RequireAuth><AllOrder/></RequireAuth>} />
-        {/* <Route exact path={`/services/:id`} element={<RequireAuth><SingleService/></RequireAuth>} /> */}
-        {/* <PrivateRoute exact path={`/services`} element={<Services/>} /> */}
-        {/* <Route exact path={`/contact`} element={<Contact/>} /> */}
-        <Route path={`/*`} element={<Error404/>} />
         <Route exact path={`/login`} element={<Login />} />
         <Route exact path={`/register`} element={<Register/>} />
+        <Route path={`/*`} element={<Error404/>} />
       </Routes>
     </div>
   );

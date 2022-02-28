@@ -16,27 +16,24 @@ const Login = () => {
 auth && navigate(from)
 
     return (
-        <>
+        <Layout>
+            <section className="be-login">
+                <Container>
+                    <Row className='d-flex align-items-center justify-content-center'>
+                        <Col lg={6} md={6} sm={12}>
+                            <Container className="be-section-header">
+                                <img src={`https://img.freepik.com/free-vector/sign-concept-illustration_114360-5267.jpg?w=740`} alt="" className='w-75'/>
+                            </Container>
+                        </Col>
 
-            <Layout>
-                <section className="be-login">
-                    <Container>
-                        <Row>
-                            <Col lg={6} md={6} sm={12}>
-                                <Container className="be-section-header">
-                                    <h1>Explore the <br/>globe with us</h1>
-                                </Container>
-                            </Col>
-
-                            <Col lg={5} md={5} sm={12}>
-                                <SigninForm />
-                            </Col>
-                        </Row>
-                    </Container>
-                </section>
-            </Layout>
-        </>
+                        <Col lg={5} md={5} sm={12}>
+                            <SigninForm />
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+        </Layout>
     )
 }
 
-export default Login
+export default Login;

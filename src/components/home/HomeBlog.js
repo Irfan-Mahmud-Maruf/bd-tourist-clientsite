@@ -14,8 +14,8 @@ const HomeBlog = () => {
                 <Row>
                     <Col lg={4} md={4} sm={12}>
                         <Link to={`/`}>
-                            <Card className="mb-4">
-                                <Card.Img src={`https://cdn.pixabay.com/photo/2016/04/27/18/47/u-a-e-1357260_960_720.jpg`} />
+                            <Card className="mb-4 ">
+                                <Card.Img src={`https://cdn.pixabay.com/photo/2021/09/07/11/53/car-6603726__340.jpg`} />
                                 <Card.Body>
                                     <Card.Text></Card.Text>
                                     <Card.Title>Our Transport Policy</Card.Title>

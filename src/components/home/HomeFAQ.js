@@ -14,13 +14,11 @@ const HomeFAQ = () => {
 
 
     return (
-        <section className="be-home-faqs">
-            <Container className="be-section-header text-center">
-                <h1 >Frequently Asked Questions</h1>
-            </Container>
-
-            <Container>
-                <Row className="justify-content-center">
+        <section className='be-faq'>
+            <Container className="be-section-header text-center d-flex justify-content-center align-items-center">
+                <img src={`https://img.freepik.com/free-vector/faqs-concept-illustration_114360-5245.jpg?w=996`} alt="" className='w-50'/>
+            
+                <Row className="w-100">
                     <Col lg={12} md={12} sm={12}>
                         <Accordion>
                             {faqs && faqs.map(faq => (

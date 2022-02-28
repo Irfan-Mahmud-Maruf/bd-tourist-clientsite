@@ -1,8 +1,7 @@
 import { ErrorMessage, Field, Form, Formik } from 'formik'
-import { Link } from 'react-router-dom'
-import { useLocation, useNavigate, Navigate } from 'react-router-dom'
+import { Button, Container, Stack } from 'react-bootstrap'
+import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom'
 import useAuth from '../../hooks/useAuth'
-import { Container, Stack, Button } from 'react-bootstrap'
 
 
 const SigninForm = () => {
@@ -80,13 +79,13 @@ const SigninForm = () => {
                                     <ErrorMessage name="password" className="text-red" component="p" />
                                 </Stack>
 
-                                <Button type="submit" className="" variant="custom">Register</Button>
+                                <Button type="submit" className='w-100' variant="secondary" >Register</Button>
                             </Form>
                         )}
                     </Formik>
 
                     <div className="d_0_auth mb-4">
-                        <Button className="btn mt-3" variant="custom" onClick={() => signinWith0Handler('google')}>Google</Button>
+                        <Button className="btn mt-3 w-100" variant="outline-secondary" onClick={() => signinWith0Handler('google')}>Google</Button>
                     </div>
 
                     <div className="link">

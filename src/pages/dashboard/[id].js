@@ -1,5 +1,5 @@
-import React from 'react'
-import { Navigate} from 'react-router';
+import React from 'react';
+import { Navigate } from 'react-router';
 import Layout from '../../components/shared/Layout';
 import useAuth from '../../hooks/useAuth';
 import Login from '../Login';
@@ -18,8 +18,7 @@ const UserDashboard = () => {
                 <div>
                     <h1>Dashboard</h1>
                 </div>
-            </Layout>
-               
+            </Layout>   
         </>
     )
 }

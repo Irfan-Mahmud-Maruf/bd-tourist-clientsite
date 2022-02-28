@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Card, Col, Container, Row } from 'react-bootstrap'
+import { Button, Card, Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 
@@ -35,7 +35,7 @@ const HomeServices = () => {
                                     </p>
 
                                     <p className="be-link dark">
-                                        <Link to={`/service/${service._id}`}>Book now</Link>
+                                        <Link to={`/service/${service._id}`} >Book now</Link>
                                     </p>
                                 </Card.Body>
                             </Card>
@@ -45,8 +45,8 @@ const HomeServices = () => {
             </Container>
 
             <Container className="mt-5">
-                <p className="be-link dark underline text-center">
-                    <Link to={`/`}>Explore more of our services</Link>
+                <p className="text-center">
+                <Button variant="outline-secondary">Explore more services</Button>
                 </p>
             </Container>
         </section>
