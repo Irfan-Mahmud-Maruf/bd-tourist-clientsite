@@ -35,7 +35,7 @@ const HomeServices = () => {
                                     </p>
 
                                     <p className="be-link dark">
-                                        <Link to={`/service/${service._id}`} >Book now</Link>
+                                        <Link className='btn btn-outline-secondary' to={`/service/${service._id}`} >Book now</Link>
                                     </p>
                                 </Card.Body>
                             </Card>

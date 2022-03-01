@@ -64,9 +64,6 @@ a {
   text-decoration: none;
 }
 
-.be-link a:hover {
-  text-decoration: underline;
-}
 .carousel-caption {
   bottom: 10%;
 }
@@ -360,6 +357,5 @@ footer .copyright a {
 
 .be-order-table .be-new-service {
   width: 100%;
-  background: #000000 !important;
 }
 /*# sourceMappingURL=main.css.map */

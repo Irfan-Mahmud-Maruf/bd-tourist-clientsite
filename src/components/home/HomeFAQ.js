@@ -15,11 +15,14 @@ const HomeFAQ = () => {
 
     return (
         <section className='be-faq'>
-            <Container className="be-section-header text-center d-flex justify-content-center align-items-center">
-                <img src={`https://img.freepik.com/free-vector/faqs-concept-illustration_114360-5245.jpg?w=996`} alt="" className='w-50 mx-5'/>
+            <Container>
+                
             
-                <Row className="w-100">
-                    <Col lg={12} md={12} sm={12}>
+                <Row className="be-section-header text-center d-flex justify-content-center align-items-center">
+                    <Col lg={5} md={5} sm={12}>
+                        <img src={`https://img.freepik.com/free-vector/faqs-concept-illustration_114360-5245.jpg?w=996`} alt="" className='w-100'/>
+                    </Col>
+                    <Col lg={6} md={6} sm={12}>
                         <Accordion>
                             {faqs && faqs.map(faq => (
                                 <Accordion.Item eventKey={faq._id} key={faq._id}>

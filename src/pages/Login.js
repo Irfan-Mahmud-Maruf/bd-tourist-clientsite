@@ -20,13 +20,13 @@ auth && navigate(from)
             <section className="be-login">
                 <Container>
                     <Row className='d-flex align-items-center justify-content-center'>
-                        <Col lg={6} md={6} sm={12}>
+                        <Col lg={5} md={5} sm={12}>
                             <Container className="be-section-header">
-                                <img src={`https://img.freepik.com/free-vector/sign-concept-illustration_114360-5267.jpg?w=740`} alt="" className='w-75'/>
+                                <img src={`https://img.freepik.com/free-vector/sign-concept-illustration_114360-5267.jpg?w=740`} alt="" className='w-100'/>
                             </Container>
                         </Col>
 
-                        <Col lg={5} md={5} sm={12}>
+                        <Col lg={7} md={7} sm={12}>
                             <SignInForm />
                         </Col>
                     </Row>

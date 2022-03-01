@@ -34,7 +34,7 @@ const ServiceAddNew = () => {
 
     return (
         <>
-            <Button className="ml-auto be-new-service outline-dark" onClick={handleShow} >
+            <Button className="ml-auto be-new-service btn btn-secondary" onClick={handleShow} >
                 Add new
             </Button>
             
@@ -82,7 +82,7 @@ const ServiceAddNew = () => {
                         {({values}) => (
 
                             <Form>
-                                <h3 className="mb-4">Add a service</h3>
+                                <h3 className="mb-4 ">Add a service</h3>
 
                                 {message && <>
                                     <div className="message-box text-light bg-custom p-3 mt-3 mb-4">

@@ -1,3 +1,4 @@
+import AboutUs from "../components/home/AboutUs"
 import Hero from "../components/home/Hero"
 import HomeBlog from "../components/home/HomeBlog"
 import HomeFAQ from "../components/home/HomeFAQ"
@@ -11,6 +12,7 @@ const Home = () => {
             <Layout>
                 <Hero/>
                 <HomeServices />
+                <AboutUs />
                 <HomeBlog />
                 <HomeFAQ />
             </Layout>
