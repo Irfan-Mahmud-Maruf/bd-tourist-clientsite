@@ -67,6 +67,9 @@ a {
 .carousel-caption {
   bottom: 10%;
 }
+.carousel-caption h1 {
+  color: #e5e5e5;
+}
 
 .card {
   border: 0;
@@ -81,7 +84,7 @@ a {
 }
 
 .card .card-body {
-  padding: 25px;
+  padding-bottom: 25px;
 }
 
 .card .card-body .card-title {
@@ -244,7 +247,7 @@ section .be-section-header h4 {
 }
 
 .be-home-services {
-  background: #f6f6f6;
+  background: #e5e5e5;
 }
 
 .be-home-blogs {
@@ -286,7 +289,7 @@ section .be-section-header h4 {
 }
 
 footer {
-  background: #f6f6f6;
+  background: #e5e5e5;
 }
 
 footer .copyright {
