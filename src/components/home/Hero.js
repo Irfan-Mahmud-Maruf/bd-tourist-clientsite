@@ -43,7 +43,7 @@ const Hero = ({ bg, className }) => {
 
                 <Carousel.Caption>
                   <h1>Find The Right Place</h1>
-                  <button className='btn btn-secondary'>find Now</button>
+                  <button className='btn btn-secondary'>Find Now</button>
                 </Carousel.Caption>
               </Carousel.Item>
             </Carousel>

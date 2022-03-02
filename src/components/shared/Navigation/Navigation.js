@@ -23,6 +23,7 @@ const Navigation = () => {
                                 <NavLink className="nav-link" to={`/dashboard/my-orders`}>My Order</NavLink>
                                 <NavLink className="nav-link" to={`/dashboard/orders`}>Orders</NavLink>
                                 <NavLink className="nav-link" to={`/dashboard/services`}>Add service</NavLink>
+                                <NavLink className="nav-link" to={`/addreview`}>Add Review</NavLink>
                             </>}  
                         </Nav>          
                         
