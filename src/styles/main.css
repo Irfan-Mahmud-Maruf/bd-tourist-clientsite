@@ -358,3 +358,15 @@ footer .copyright a {
   width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
+@media only screen and (max-width: 767px) {
+  .be-order-table {
+    display: none;
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .be-dashboard-phone-item {
+    display: none;
+    visibility: hidden;
+  }
+}

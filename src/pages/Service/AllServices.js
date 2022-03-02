@@ -20,8 +20,8 @@ const AllServices = () => {
 
     return (
         <>
-            <Layout classname="be-dashboard-allorder">
-                <section className="be-order-table">
+            <Layout classname="be-dashboard-allorder ">
+                <section >
                     <Container>
                         <Row>
                             <Col lg={10} md={10} sm={12} >
@@ -60,6 +60,19 @@ const AllServices = () => {
                                     )}
                                 </tbody>
                             </Table>
+
+                            {/* Card */}
+                            <div className='be-dashboard-phone'>
+                                {services.map((service, i) => (
+                                    <div className='be-dashboard-phone-item shadow mt-4 p-4' >
+                                        <h3 className='fs-4 mb-2 fw-bold'>{service.title}</h3>
+                                        <p className='fs-6 mb-1'><span className='fw-bold'>Day: </span>{service.day}</p>
+                                        <p className='fs-6 mb-1'><span className='fw-bold'>Price: </span>{service.cost} USD</p>
+                                        <p className='fs-6'>{service.brief}</p>
+                                    </div>
+                                ))}
+                            </div>
+
                         </>}
                     </Container>
                 </section>

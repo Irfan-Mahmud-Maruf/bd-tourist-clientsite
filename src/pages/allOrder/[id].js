@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Col, Container, Row, Spinner, Table } from 'react-bootstrap';
+import { Button, ButtonGroup, Col, Container, Row, Spinner, Table } from 'react-bootstrap';
 import { FaTimes } from "react-icons/fa";
 import Layout from '../../components/shared/Layout';
 
@@ -28,7 +28,7 @@ const AllOrder = () => {
     return (
         <>
             <Layout className="be-dashboard-allorder">
-                <section className="be-order-table">
+                <section>
                     <Container>
                         <Row>
                             <Col>
@@ -67,6 +67,29 @@ const AllOrder = () => {
                                     ))}
                                 </tbody>
                             </Table>
+
+                            {/* Card */}
+                            <div className='be-dashboard-phone'>
+                                {allOrders.map((order, i) => (
+                                    <div className='be-dashboard-phone-item shadow mb-4 p-4' >
+                                        <h3 className='fs-4 mb-2 fw-bold'>{order.title}</h3>
+                                        <p className='fs-6'>{order.date}</p>
+                                        <p><span className='fw-bold'>Price: </span>{order.cost} USD</p>
+
+                                        <ButtonGroup size="sm" className='mt-2'>
+                                            <Button size="sm" onClick={() => handerOrderComplete(order._id)} variant="outline-dark">
+                                                Complete
+                                            </Button>
+
+                                            <Button size="sm" className="ml-2" onClick={() => handerOrderRemove(order._id)} variant="outline-danger">
+                                                <FaTimes />
+                                            </Button>
+                                        </ButtonGroup>
+                                    </div>
+                                ))}
+                            </div>
+
+                        
                         </>}
                     </Container>
                 </section>
