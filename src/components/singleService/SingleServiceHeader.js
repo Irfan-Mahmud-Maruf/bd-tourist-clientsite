@@ -7,7 +7,7 @@ const SingleServiceHeader = ({title}) => {
         <div className="be-single-service-header">
             <Container>
                 <Row className="justify-content-center">
-                    <Col lg={8} md={7} sm={12}>
+                    <Col lg={12} md={12} sm={12}>
                         <h1>{title}</h1>
                     </Col>
                 </Row>

@@ -11,7 +11,7 @@ const Footer = () => {
             <Container className="p-5 pb-0">
                 <Row>
                   <div className="col-md-4 col-lg-4 col-sm-12 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">
+                    <h6 className="text-uppercase mb-4 font-weight-bold">
                       BD Tourist
                     </h6>
                     <p>
@@ -27,34 +27,34 @@ const Footer = () => {
                     <p><BsPrinterFill className="me-3"/> + 01 234 567 88</p>
                   </div>
                   <div className="col-md-4 col-lg-4 col-sm-12 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+                    <h6 className="text-uppercase mb-4 font-weight-bold">Follow us</h6>
                     <a 
-                       className="btn btn-primary m-1 rounded-circle"
+                       className="btn btn-secondary m-1 rounded-circle"
                        href="#!"
                        role="button"
                        ><BsFacebook/></a>
                     <a
-                       class="btn btn-primary m-1 rounded-circle"
+                       className="btn btn-secondary m-1 rounded-circle"
                        href="#!"
                        role="button"
                        ><BsTwitter/></a>
                     <a
-                       class="btn btn-primary m-1 rounded-circle"
+                       className="btn btn-secondary m-1 rounded-circle"
                        href="#!"
                        role="button"
                        ><BsGoogle/></a>
                     <a
-                       class="btn btn-primary m-1 rounded-circle"
+                       className="btn btn-secondary m-1 rounded-circle"
                        href="#!"
                        role="button"
                        ><BsInstagram/></a>
                     <a
-                       class="btn btn-primary m-1 rounded-circle"
+                       className="btn btn-secondary m-1 rounded-circle"
                        href="#!"
                        role="button"
                        ><BsLinkedin/></a>
                     <a
-                       class="btn btn-primary m-1 rounded-circle"
+                       className="btn btn-secondary m-1 rounded-circle"
                        href="#!"
                        role="button"
                        ><BsGithub/></a>
@@ -62,7 +62,7 @@ const Footer = () => {
                 </Row>
             </Container>
             <hr />
-            <div class="text-center p-3">
+            <div className="text-center p-3">
               © 2020 Copyright:
               <span className="text-muted">BD Tourist</span>
             </div>

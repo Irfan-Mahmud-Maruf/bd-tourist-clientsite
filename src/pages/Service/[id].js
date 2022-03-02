@@ -19,7 +19,7 @@ function SingleService() {
     }, [id])
 
     return (
-        <Layout className="be-single-service">
+        <Layout className="be-single-service d-flex flex-column justify-content-center align-items-center">
             {data && <>
                 <SingleServiceHeader title={data.title} />
                 <SingleServiceCover img={data.img} alt={data.title}/>

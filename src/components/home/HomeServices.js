@@ -14,7 +14,7 @@ const HomeServices = () => {
 
 
     return (
-        <section className="be-home-services">
+        <section className="be-home-services ">
             <Container className="be-section-header text-center">
                 <h1 >Lets Plan a Trip</h1>
                 <h4 >We start plan from Dhaka city</h4>

@@ -33,8 +33,8 @@ const SingleServiceBody = ({ id, body, title, price }) => {
     return (
         <div className="be-single-service-body">
             <Container>
-                <Row className="justify-content-center">
-                    <Col lg={8} md={7} sm={12}>
+                <Row >
+                    <Col lg={12} md={12} sm={12}>
                         {body}
                     
                         <hr />
@@ -43,7 +43,7 @@ const SingleServiceBody = ({ id, body, title, price }) => {
                                 <p>Tour Cost: 150$</p>
                             </Col>
                             <Col lg={3} md={3} sm={12}>
-                                <Button size="lg" onClick={() => handlerPlaceOrder( user.uid, id, title, price)} disabled={loading}>
+                                <Button variant="secondary" size="lg" onClick={() => handlerPlaceOrder( user.uid, id, title, price)} disabled={loading}>
                                     {loading? <Spinner as="span" animation="border" size="sm" role="status" aria-hidden="true" /> :'Book Now'}
                                 </Button>
                             </Col>
