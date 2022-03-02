@@ -30,9 +30,9 @@ a {
   text-decoration: none;
 }
 
-.btn {
+/* .btn {
   border-radius: 0 !important;
-}
+} */
 
 .btn:hover {
   opacity: 0.9;
