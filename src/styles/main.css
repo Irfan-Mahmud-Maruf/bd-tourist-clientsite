@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -356,6 +361,13 @@ footer .copyright a {
 
 .be-order-table .be-new-service {
   width: 100%;
+}
+.reviews img {
+  width: 100px;
+}
+.icon-color {
+  color: rgb(250, 185, 19);
+  font-size: 15px;
 }
 /*# sourceMappingURL=main.css.map */
 @media only screen and (max-width: 767px) {

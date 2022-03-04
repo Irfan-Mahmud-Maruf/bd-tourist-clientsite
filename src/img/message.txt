@@ -1,19 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import { Button, ButtonGroup, Container, Row, Spinner, Table } from 'react-bootstrap';
+Font-end
+```javascript
+import { Col, Container, Row, Table, Button, Spinner, ButtonGroup, Card } from 'react-bootstrap';
+import Layout from '../../views/shared/Layout/Layout';
+import { useState, useEffect } from 'react';
 import { FaTimes } from "react-icons/fa";
-import Layout from '../../components/shared/Layout';
 import useAuth from '../../hooks/useAuth';
 
 
 const UserOrder = () => {
-    const [loading, setAllLoading] = useState(true)
-    const [allOrders, setAllOrders] = useState()
-
-    const {user} = useAuth([]);
+    const [loading, setAllLoading] = useState(true);
+    const [pageLoading, setAllPageLoading] = useState(true);
+    const [allOrders, setAllOrders] = useState();
+    const { user } = useAuth();
 
     useEffect(() => {
-        const url = `${process.env.REACT_APP_API_URL}/orders/user?guid=${user.uid}`;
-        console.log(url);
+        const url = `${process.env.REACT_APP_API}/orders/user?guid=${user.uid}`;
 
         fetch(url)
             .then(res => res.json())
@@ -24,23 +25,27 @@ const UserOrder = () => {
     }, []);
 
     const handerOrderComplete = (id) => {
-        console.log(id)
+        console.log(id);
     }
     const handerOrderRemove = (id) => {
-        console.log(id)
+        console.log(id);
     }
 
+    
     return (
         <>
-            <Layout>
-                <section>
+            
+            <Layout className="be-dashboard-allorder">
+                <section className="be-order-table">
                     <Container>
                         <Row>
-                            <h1>Orders</h1>
+                            <Col>
+                                <h1>Orders</h1>
+                            </Col>
                         </Row>
-
+                        
                         {loading ? <Spinner as="span" animation="border" size="sm" role="status" aria-hidden="true" /> : allOrders && <>
-                            <Table className="be-order-table" striped bordered hover>
+                            <Table className="be-order-table admin-table" bordered hover>
                                 <thead>
                                     <tr>
                                         <th>No</th>
@@ -52,25 +57,30 @@ const UserOrder = () => {
 
                                 <tbody>
                                     {allOrders.map((order, i) => (
-                                        <tr key={order._id}>
+
+                                        <tr className="w-100" key={order._id}>
                                             <td>{i + 1}</td>
                                             <td>{order.title}</td>
                                             <td>{order.date}</td>
                                             <td>{order.cost} USD</td>
-                                            <td>
-                                                <Button size="sm" onClick={() => handerOrderComplete(order._id)} variant="outline-dark" style={{ marginRight: 10 }}>
-                                                    Complete
-                                                </Button>
+                                            <td className="d-flex justify-content-center">
+                                                <ButtonGroup size="sm">
+                                                    <Button size="sm" onClick={() => handerOrderComplete(order._id)} variant="outline-dark">
+                                                        Complete
+                                                    </Button>
 
-                                                <Button size="sm" className="ml-2" onClick={() => handerOrderRemove(order._id)} variant="outline-danger">
-                                                    <FaTimes />
-                                                </Button>
+                                                    <Button size="sm" className="ml-2" onClick={() => handerOrderRemove(order._id)} variant="outline-danger">
+                                                        <FaTimes />
+                                                    </Button>
+                                                </ButtonGroup>
                                             </td>
+                                            <td></td>
                                         </tr>
                                     ))}
                                 </tbody>
                             </Table>
 
+                            
                             {/* Card */}
                             <div className='be-dashboard-phone'>
                                 {allOrders.map((order, i) => (
@@ -98,7 +108,8 @@ const UserOrder = () => {
                 
             </Layout>
         </>
-    )
+    );
 }
 
-export default UserOrder
+export default UserOrder;
+```
